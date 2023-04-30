@@ -1,0 +1,130 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    
+    
+    <title>Happy Dental!</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+
+</head>
+
+<body>
+
+<header>
+    
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark justify-content-between nav-fill me-auto">
+    <button class="navbar-toggler float-left" type="button" data-toggle="collapse"
+        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation ">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link text-white" href="{% url 'index' %}">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="{% url 'services' %}">Services<li>
+            {% if user.is_authenticated %}
+            <li class="nav-item"><a class="nav-link text-white" href="{% url 'bookings' %}">My bookings</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="{% url 'account_logout' %}">Logout</a></li>
+            <li class="nav-item"><span class="navbar-text text-white ml-3 mr-3">Welcome: [{{ user.username }}]</span></li>
+            {% else %}
+            <li class="nav-item"><a class="nav-link text-white" href="{% url 'account_signup' %}">Sign up</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="{% url 'account_login' %}">Login</a></li>
+            {% endif %}
+        </ul>
+         
+             <a href="{%url 'booknow' %}" class="btn btn-outline-warning book-now d-inline-flex p-2 d-none d-lg-flex"
+                >Book Now</a>
+            <a class="navbar-brand ml-auto" href="{% url 'index' %}">Happy Dental</a>
+    </div>
+</nav>
+   
+</header>
+<div class="d-flex ml-4">
+    {% for message in messages %}
+    <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+        {{ message | safe }}
+        <button type="button" class="btn-close close" data-bs-dismiss="alert">x</button>
+    </div>
+    {% endfor %}
+</div>
+
+    {% block content %}
+
+
+    {% endblock %}
+  
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+
+    <!-- Function to close warning messages. Credit: CI walkthrough project code -->
+    <script>setTimeout(function () {
+            let messages = document.getElementById('msg');
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+        }, 2500);
+    </script>
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-section col-md-4 text-center">
+        <h4>Quick Links</h4>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="mailto:info@example.com">Contact Us</a></li>
+            </ul>
+      </div>
+      <div class="footer-section col-md-4 text-center">
+        <h4>Contact Us</h4>
+        <p>Happy Dental</p>
+        <p>Phone: (01) 123 4567</p>
+        <p>Email: info@example.com</p>
+      </div>
+      <div class="footer-section col-md-4 text-center">
+        <h4>Social Media</h4>
+        <div class="social-icons d-flex justify-content-center align-items-center">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Happy Dental. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
