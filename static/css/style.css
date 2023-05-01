@@ -213,3 +213,68 @@ footer {
     text-decoration: none;
     color: #fff;
   }
+
+  /*** services page ***/
+
+.services-page {
+    background-image: url("/static/img/services.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .services-contain {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+    opacity: 0.9;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+  }
+  
+  .services-block {
+    width: 100%;
+    margin-top: 5vh;
+    padding-bottom: 10px;
+  }
+  
+  .title-block-services {
+    background-color: #000;
+    opacity: 0.8;
+    color: #fff;
+  }
+  
+  
+  .services {
+    
+    color: #000;
+  }
+  
+  .services-item {
+    display: inline-block;
+    width: 100%;
+    padding: 0 2px;
+    vertical-align: middle;
+    margin: 0 auto;
+    height: 4em;
+    line-height: 4em;
+    border: 1px solid #312E38;
+    border-top:0;
+  }
+  
+  .text-right,
+  .text-left {
+    display: inline-block;
+  }
+  
+  .text-left {
+    float: left;
+  }
+  
+  .text-right {
+    float: right;
+  }
+  
+  .btn-light {
+    border: 1px solid #000;
+  }
