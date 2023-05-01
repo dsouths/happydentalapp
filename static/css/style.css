@@ -315,7 +315,7 @@ footer {
   /*** Bookings page ***/
 
     .booking-page {
-        background-image: url("/static/img/bookings.jpg");
+        background-image: url("https://res.cloudinary.com/dghprmi1e/image/upload/v1682945069/bookings_eus4hc.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
