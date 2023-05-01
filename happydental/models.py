@@ -43,6 +43,14 @@ class Dentist(models.Model):
     def __str__(self):
         return self.name
 
+class Appointment(models.Model):
+    dentist = models.ForeignKey(Dentist, on_delete=models.CASCADE)
+    date = models.DateField()
+    time = models.TimeField()
+
+    class Meta:
+        unique_together = ('dentist', 'date', 'time')
+
 
 def get_default_dentist():
     default_dentist, created = Dentist.objects.get_or_create(name="Dr Goodteeth")
@@ -55,7 +63,6 @@ class Booking(models.Model):
     booking form
     """
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    dentist = models.ForeignKey(Dentist, on_delete=models.CASCADE, default=get_default_dentist)
     service = models.ForeignKey(Service, null=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=50)
     email = models.EmailField(blank=True, null=True)
@@ -65,11 +72,12 @@ class Booking(models.Model):
                                 code="invalid")
     phone = models.CharField(validators=[phoneRegex], max_length=16,
                              null=True, blank=True)
+    dentist = models.ForeignKey(Dentist, on_delete=models.CASCADE, default=get_default_dentist)
     date = models.DateField()
     time = models.CharField(max_length=30, choices=HOURS, default='10:00')
 
     class Meta:
-        unique_together = ('user', 'date', 'time', 'service')
+        unique_together = ('user','dentist', 'date', 'time', 'service')
 
     def __str__(self):
         return self.name
