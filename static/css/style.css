@@ -343,14 +343,14 @@ footer {
   /* Login page */
 
 .bg-login{
-    background-image: url("/static/img/login.jpg");
+    background-image: url("https://res.cloudinary.com/dghprmi1e/image/upload/v1682945069/login_iisnfg.jpg");
     z-index: 2;
   }
   
   /* Sign Up page */
   
   .bg-signup {
-    background-image: url("/static/img/signup.jpg");
+    background-image: url("https://res.cloudinary.com/dghprmi1e/image/upload/v1682945071/signup_ikpuyd.jpg");
   }
   
   .signup h3, .signup p, .signup a, .signup label {
@@ -370,6 +370,6 @@ footer {
   
   /* Logout page */  
   .bg-logout {
-    background-image: url("/static/img/signout.jpg");
+    background-image: url("https://res.cloudinary.com/dghprmi1e/image/upload/v1682945071/signout_iyojdh.jpg");
     z-index: 2;
   }
