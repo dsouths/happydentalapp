@@ -160,14 +160,17 @@ footer {
   
   
   .bg-home {
-    background-image: url("/static/img/landing.jpg");
-    
-  }
+    background-image: url('https://res.cloudinary.com/dghprmi1e/image/upload/v1682945072/landing.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; /
+}
   
   .background-box {
   
     position: absolute;
-    top: 50%; /* adjust as necessary */
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
     background-color: #333d51;
