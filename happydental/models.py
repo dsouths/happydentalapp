@@ -55,6 +55,7 @@ class Booking(models.Model):
     booking form
     """
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    dentist = models.ForeignKey(Dentist, on_delete=models.CASCADE, default=get_default_dentist)
     service = models.ForeignKey(Service, null=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=50)
     email = models.EmailField(blank=True, null=True)
@@ -66,7 +67,6 @@ class Booking(models.Model):
                              null=True, blank=True)
     date = models.DateField()
     time = models.CharField(max_length=30, choices=HOURS, default='10:00')
-    dentist = models.ForeignKey(Dentist, on_delete=models.CASCADE, default=get_default_dentist)
 
     class Meta:
         unique_together = ('user', 'date', 'time', 'service')

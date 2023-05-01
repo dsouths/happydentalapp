@@ -32,10 +32,12 @@ class BookingForm(forms.ModelForm):
 
     class Meta:
         model = Booking
-        fields = ('name', 'phone', 'email', 'service', 'date', 'time')
+        fields = ('name', 'phone', 'email', 'dentist', 'service', 'date', 'time')
         widgets = {'date': DateInput()}
     
     dentist = forms.ModelChoiceField(queryset=Dentist.objects.all())
+    
+    phone = forms.CharField(required=True)
     
     def clean_date(self):
         date = self.cleaned_data['date']

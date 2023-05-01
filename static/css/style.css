@@ -311,7 +311,14 @@ footer {
 
   /*** Bookings page ***/
 
-.card {
+    .booking-page {
+        background-image: url("/static/img/bookings.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+  .card {
     width: 17rem;
     display: inline-block;
     align-items: center;
@@ -360,6 +367,6 @@ footer {
   
   /* Logout page */  
   .bg-logout {
-    background-image: url("/static/assets/img/logout.jpg");
+    background-image: url("/static/img/signout.jpg");
     z-index: 2;
   }
