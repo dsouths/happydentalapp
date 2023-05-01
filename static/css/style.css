@@ -278,3 +278,33 @@ footer {
   .btn-light {
     border: 1px solid #000;
   }
+
+  /*** Booknow page ***/
+
+.booknow-page {
+    background-image: url("/static/img/booknow.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .booknow-contain {
+    margin: 0 auto;
+    background-color: #312E38;
+    opacity: 0.9;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+  
+  }
+  
+  .booknow-block {
+    font-weight: 500;
+    background-color: #312E38;
+    opacity: 0.9;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+  }
+  
+  .booknow-block a {
+    color: #FF9000;
+  }
