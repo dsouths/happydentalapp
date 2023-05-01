@@ -220,7 +220,7 @@ footer {
   /*** services page ***/
 
 .services-page {
-    background-image: url("/static/img/services.jpg");
+    background-image: url("https://res.cloudinary.com/dghprmi1e/image/upload/v1682945069/services_dctqkd.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
