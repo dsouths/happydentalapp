@@ -285,7 +285,7 @@ footer {
   /*** Booknow page ***/
 
 .booknow-page {
-    background-image: url("/static/img/booknow.jpg");
+    background-image: url("https://res.cloudinary.com/dghprmi1e/image/upload/v1682945072/booknow_sqw3ir.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
