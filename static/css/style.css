@@ -308,3 +308,58 @@ footer {
   .booknow-block a {
     color: #FF9000;
   }
+
+  /*** Bookings page ***/
+
+.card {
+    width: 17rem;
+    display: inline-block;
+    align-items: center;
+  }
+  
+  .delete-btn {
+    color: #312E38 ;
+    font-weight: 500;
+  
+  }
+  
+  /*** Change-booking page  */
+  
+  .change-form {
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+  }
+
+  /* Login page */
+
+.bg-login{
+    background-image: url("/static/img/login.jpg");
+    z-index: 2;
+  }
+  
+  /* Sign Up page */
+  
+  .bg-signup {
+    background-image: url("/static/img/signup.jpg");
+  }
+  
+  .signup h3, .signup p, .signup a, .signup label {
+    color: #000;
+  }
+  
+  .account-link {
+    color: #F6C026;
+  }
+  
+  .form {
+    border: 2px solid #6c757d;
+    border-radius: 5px;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  
+  /* Logout page */  
+  .bg-logout {
+    background-image: url("/static/assets/img/logout.jpg");
+    z-index: 2;
+  }
