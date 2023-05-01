@@ -1,0 +1,119 @@
+/*** General  ***/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Roboto Slab', serif;
+    height: 100%;
+    background-color: #333d51;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .wrapper {
+    background-color: #93A6A5;  
+  }
+  
+  .errorlist {
+    color:#ff0000;
+  }
+  
+  /***  Navigation  ***/
+  
+  nav {
+    font-size: 20px;
+    z-index: 5;
+  }
+  
+  a.nav-link {
+  border-bottom: 2px solid transparent;
+  }
+  
+  a.nav-link:hover {
+    border-bottom: 2px solid #F6C026;
+  }
+  
+  .book-now {
+    font-size: 15px;
+  }
+  
+  .navbar-brand {
+    font-family: 'Zeyada', sans-serif;
+    font-size: 50px;
+    color: #F6C026 !important;
+    transition: transform 0.2s ease;
+  }
+  
+  .navbar-brand:active {
+    
+    /* Apply the push button effect */
+    transform: scale(0.9);
+  }
+
+  /* Footer */
+
+footer {
+    background-color: #333d51;
+    color: white;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 0 20px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #F6C026;
+  }
+  
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #F6C026;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+  }
