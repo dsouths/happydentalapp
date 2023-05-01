@@ -158,7 +158,6 @@ footer {
     height: 100vh;
   }
   
-  
   .bg-home {
     background-image: url('https://res.cloudinary.com/dghprmi1e/image/upload/v1682945072/landing.jpg');
     background-size: cover; 
@@ -246,7 +245,6 @@ footer {
     opacity: 0.8;
     color: #fff;
   }
-  
   
   .services {
     
@@ -373,3 +371,106 @@ footer {
     background-image: url("https://res.cloudinary.com/dghprmi1e/image/upload/v1682945071/signout_iyojdh.jpg");
     z-index: 2;
   }
+
+  .messages-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*** Media queries  ***/
+
+/* for screens that are 1024px wide or less */
+@media (max-width: 1024px) {
+  .half-bg {
+      background-position-x: 65%;
+  }
+
+  .form {
+      width: 75%;       
+  }
+
+}
+
+/* for screens that are 912px wide or less */
+@media (max-width: 912px) {
+
+  .half-block{
+      width: 100%;
+  }
+
+  .bg-home {
+    background-image: url("https://res.cloudinary.com/dghprmi1e/image/upload/v1682945070/signin_vj7w0e.jpg");
+    
+  }
+
+  .navbar-brand,
+  .book-now-btn {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .book-now-btn {
+    margin-top: 10px;
+  }
+
+  .book-now-centered {
+    display: block !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+/*** Change booking page  ***/
+
+.card-change {
+  width: 80%;    
+}
+ 
+}
+
+/* for screens that are 480px wide or less */
+@media (max-width: 480px) {
+  .half-bg {
+      display: none;
+  }
+  .services-page,
+  .booknow-page {
+      background-image: none;
+  }
+
+  .change-form {
+      width: 95%;
+      padding: 10px;
+  }
+
+  .services-contain {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .services-item,
+  .btn-light {
+      margin-left: 1px;
+      margin-right: 1px;
+      font-size: 0.8rem;
+  }
+
+}
+
+/* for screens that are 320px wide or less */
+@media (max-width: 320px) {
+
+  a.btn-light {
+      padding: 4px 10px;
+  }
+
+  
+}

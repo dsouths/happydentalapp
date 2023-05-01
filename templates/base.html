@@ -54,14 +54,14 @@
             {% endif %}
         </ul>
          
-             <a href="{%url 'booknow' %}" class="btn btn-outline-warning book-now d-inline-flex p-2 d-none d-lg-flex"
+             <a href="{%url 'booknow' %}" class="btn btn-outline-warning book-now d-inline-flex p-2 d-none d-lg-flex book-now-centered"
                 >Book Now</a>
             <a class="navbar-brand ml-auto" href="{% url 'index' %}">Happy Dental</a>
     </div>
 </nav>
    
 </header>
-<div class="d-flex ml-4">
+<div class="messages-container d-flex ml-4">
     {% for message in messages %}
     <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
         {{ message | safe }}
