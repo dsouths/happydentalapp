@@ -1,4 +1,4 @@
-Happy Dental - Dental Booking App
+<h2>Happy Dental - Dental Booking App</h2>
 
 - [**UX (User Experience)**](#ux-user-experience)
   - [**User Stories**](#user-stories)
