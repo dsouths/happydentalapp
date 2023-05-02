@@ -1,1 +1,1 @@
-web: gunicorn happydental.wsgi:application
+web: gunicorn bookingapp.wsgi:application
