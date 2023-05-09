@@ -66,7 +66,7 @@ As a Site Administrator I would like to be able to create, view, edit and delete
 
 [Back to the top](#table-of-contents)
 
-### Agile tools
+#### Agile tools
 
 I used a [Kanban board](https://github.com/users/dsouths/projects/3/views/1) for the development of this project, which made it possible to break down the project execution into subtasks and make it easier to complete and track project progress.  This is located in the GitHub Projects section
 
