@@ -44,11 +44,11 @@ This website is a fictional dental practice called HAPPYDENTAL. It is designed t
 #### First time visitor goals
 
 As a first time visitor, I want:
-* to easily understand the main purpose of the site,
-* to be able to easily navigate throughout the site,
-* to be able to register a user account to access all content without restrictions,
-* to be able to reserve a day and time for a treatment with a chosen dentist, view booking details and make changes to created bookings and delete my bookings,
-* to be able to log out of my user account.
+* understand the main purpose of the site,
+* able to easily navigate throughout the site,
+* able to register a user account to access all content without restrictions,
+* able to reserve a day and time for a treatment with a chosen dentist, view booking details and make changes to created bookings and delete my bookings,
+* able to log out of my user account.
        
         
 #### Returning and frequent user goals
@@ -65,3 +65,20 @@ As a returning user, I want:
 As a Site Administrator I would like to be able to create, view, edit and delete booking data.    
 
 [Back to the top](#table-of-contents)
+
+### Agile tools
+
+I used a [Kanban board](https://github.com/users/dsouths/projects/3/views/1) for the development of this project, which made it possible to break down the project execution into subtasks and make it easier to complete and track project progress.  This is located in the GitHub Projects section
+
+#### Design and Site Structure
+
+The site was based on the Gobarber template from the Figma Community site. The look of the site & fonts for the home page were borrowed from the template.
+The main page layout can be seen below:
+
+<details>
+<summary>Happy Dental website design template </summary>
+
+![Home page](static/img/screenshots/homepage.png)
+
+</details>
+<br />
