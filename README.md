@@ -82,3 +82,38 @@ The main page layout can be seen below:
 
 </details>
 <br />
+
+### Functional Structure
+
+**Home page:** The home page contains a menu, clickable logo (returns to homepage) and an image that gives the user an idea of ​​the type of service provided i.e. a dental booking website. In the middle of the page there are links to register a new user or login for an existing user.
+
+Signup and login are also available from the navigation bar.
+
+**Signup page:** The user must create an account to make a reservation.
+To do this, they are asked to fill out a form on the page with the required fields: username and password. There is also an optional email field.
+
+**Login page:** A username and password are required to log in existing users.
+The user can use the navigation menu or the link in the center of the home page.
+After a successful login, the user receives a message prompt in the middle of the screen and is redirected to the page with their reservations. If the user has no bookings, then they see a message saying they have no bookings & gives a link to make a booking.
+
+**Logout page:** Logging out of the account is done through the menu, after which the user is redirected to the logout page where they must confirm their request to log out of the account. After a successful logout, the user is returned to the home page and receives a message in the middle of the screen.
+
+**Services page:** The page displays the services/treatments provided & cost of each service.  I have only included a small sample of possible treatments available at the dentist for illustrative purposes, this can be increased upon request of the owner of the dental booking app/dental surgery.
+
+Clicking on the price of the selected service redirects the authorized user to the service booking page. An unauthorized user is prompted to register or log into an account before making a booking.
+
+**Booknow page:** The Booknow page is only available to authenticated users.
+The user is asked to fill out a form with the required fields - name, phone, service, preferred dentist, time and date, and an optional field - email.
+After filling out the form, the user is redirected to the page of current bookings.
+
+**Booking page:** Only authenticated users have access to the Booking page. The link to this page becomes visible in the navigation menu once a user is authenticated. Booking page shows to user information about made bookings and contains Change button and Delete button for manage booking.
+
+**Change booking page:** This page is available only to authenticated users and has the same functionality and form as the Booknow page, where users can change booking details.
+
+**Delete booking page:** This page is only available to authenticated users and has the same functionality and form as the Booknow page, where the user can change the booking details. The user has the ability to delete theur order by selecting the Delete button on the Booking page. After that, they will be redirected to the delete page where they need to confirm their request. After successfully deleting the booking, they will return to the Booking page and receive a message at center of the screen.
+
+If the user changes their mind, they can return to the page by clicking on the Back to my Bookings button.
+
+[Back to the top](#table-of-contents)
+
+
