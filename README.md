@@ -26,7 +26,7 @@
 
 ![](static/assets/img/amiresponsive-light.png)
 
-The deployed [HAPPYDENTAL]() app.
+The deployed [HAPPYDENTAL](https://happydental.herokuapp.com/) app.
 
 The [GitHub repository](https://github.com/dsouths/happydentalapp)
 
