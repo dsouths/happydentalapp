@@ -222,7 +222,7 @@ The project has been tested using a multi-device emulator with different screen 
 
 ## Future features
 
-- payment functionality to allow dental practice to take a deposit from each patient. 
+- payment functionality to allow dental practice to take a deposit &/or full payment from each patient/user. 
 - create & populate a google sheet to allow each dentist to see patients booked in for each timeslot on each day
 - booking confirmation by email & text if requested
 
@@ -309,3 +309,63 @@ The available functionality and user experience is reflected in the table below.
 | |
 
 <br/>
+
+## Validation
+
+### HTML Validation:
+
+The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website.  I had an issue with W3 validator not recognizing Django code such as {% load static %} so I used the function CTRL + U to get the source code of my website & check it for errors using W3 validator.  I did this as it created errors and warnings in the reports about unclosed elements and tags, incorrect values and types of elements, unnecessary trailing slashes. All errors and warnings were corrected when validating the source code of each page
+
+Initial errors when using W3 Validator to validate Django code
+
+<details><summary>W3 Errors due to Django code</summary>
+
+![](https://github.com/dsouths/happydentalapp/assets/105642587/b4b90bd3-e327-4f51-946f-fa72f07db9f6)
+
+</details>
+
+
+
+<details><summary>Home page</summary>
+
+![](https://github.com/dsouths/happydentalapp/assets/105642587/59231143-1efd-4628-b8e5-d00d48aea2b7)
+
+</details>
+
+<details><summary>Services page</summary>
+
+![](https://github.com/dsouths/happydentalapp/assets/105642587/60c46fc9-3fc4-49dd-a007-1df1a4a654b6)
+
+</details>
+
+<details><summary>Sign up page</summary>
+
+![](https://github.com/dsouths/happydentalapp/assets/105642587/7643d8c8-adf0-4052-b341-7c688ef48519)
+
+</details>
+
+<details><summary>Login page</summary>
+
+![](https://github.com/dsouths/happydentalapp/assets/105642587/105d909f-2939-4c6f-9d9b-4fd6105ac970)
+</details>
+
+<details><summary>Book Now page for authorized users</summary>
+
+![](https://github.com/dsouths/happydentalapp/assets/105642587/b5306220-9472-48f7-9f37-31f12f55f544)
+</details>
+
+<details><summary>Change booking page</summary>
+
+![](https://github.com/dsouths/happydentalapp/assets/105642587/5863633a-a58f-48dc-9ea0-d5fc93c3055d)
+
+<details><summary>Delete booking page</summary>
+
+![](https://github.com/dsouths/happydentalapp/assets/105642587/618c1ce6-edb4-4dd9-90d1-85ac92491922)
+
+</details>
+ 
+<details><summary>Logout page</summary>
+
+![](https://github.com/dsouths/happydentalapp/assets/105642587/f8baf4f6-a1c2-41f1-a3c3-ebde8607a124)
+
+</details>
