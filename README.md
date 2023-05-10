@@ -261,3 +261,51 @@ The project has been tested using a multi-device emulator with different screen 
 - [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS code for the website.
 - [Github Projects and Kanban board](https://github.com/users/dsouths/projects/3/views/1) - track the progress of the project in general and of every application in the project.
 - [Free grammar checker](https://www.zoho.com/writer/free-grammar-checker.html)
+
+
+### Manual Testing
+
+#### Device Testing
+
+The Project was tested using a multi-device emulator with different display sizes in the Google Chrome Developer Dashboard.
+
+The following devices have been tested:
+
+- Dell Inspiron 27" (Desktop)
+- iPad Pro (Tablet)
+- iPad Air (Tablet)
+- iPad Mini (Tablet)
+- Galaxy Tab S4 (Tablet)
+- Nexus 7 (Mobile)
+- Nokia N9 (Mobile)
+- iPhone 5/SE (Mobile)
+- iPhone 4 (Mobile)
+
+#### Browsers Tested
+
+Testing has been carried out on the  following browsers: 
+  - Google Chrome
+  - Firefox
+  - Microsoft Edge
+
+The site was constantly tested during the process of creating the site in the Gitpod Environment and the deployed site on Heroku was also tested in terms of user experience.
+The available functionality and user experience is reflected in the table below.
+
+| Goals/actions  | As a guest | As a logged user  | Result | Comment |
+|--|:--:|:--:|:--:|--|
+| I can use menu and navigating through pages | &check; | &check; | Pass | Click on menu item redirects to appropriate page |
+| I can see the home page | &check; | &check; | Pass | |
+| I can see the Services page | &check; |&check;  |  Pass| |
+| I can see the Sign Up page | &check; |&check;  |  Pass| |
+| I can see the Login page  | &check; |&check;  |  Pass| |
+| I can see the Logout page  | &check; |&check;  |  Pass| |
+| I can click the Book Now button  | &check; |&check;  |  Pass| Redirects to the page with a message that the user must register or log in for guest or shows up form for authorized user |
+| I can see the Booknow page | &cross; | &check;  | Pass |A page is displayed with a message that the user must register or log in  |
+| I can fill fields in the form the Booknow page | &cross; | &check;  | Pass |This page and form are available only to authorized users |
+| I can see the Bookings page   | &cross; | &check;  | Pass | This page is available only to an authorized users|
+| I can see the Change booking page  | &cross;  | &check;  | Pass | This page is available only to authorized users|
+| I can edit booking in the form on the Change booking page  | &cross;  | &check;  | Pass |This page is available only to authorized users ||
+| I can see the Delete booking page  |  &cross; | &check;  |Pass  | This page is available only to authorized users |
+| |
+
+<br/>
