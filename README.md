@@ -214,5 +214,14 @@ An authenticated user can logout from account by clicking the Logout button, aft
 
 ![Logout page](https://github.com/dsouths/happydentalapp/assets/105642587/596d6514-881f-4908-b358-28a23f77eab3)
 
+### Responsive design
+The site has been designed to be responsive and adapted for desktop and mobile use.
+The project has been tested using a multi-device emulator with different screen sizes in the Google Chrome Developer Dashboard.
 
+## Future features
 
+- payment functionality to allow dental practice to take a deposit from each patient. 
+- create & populate a google sheet to allow each dentist to see patients booked in for each timeslot on each day
+- booking confirmation by email & text if requested
+
+[Back to the top](#table-of-contents)
