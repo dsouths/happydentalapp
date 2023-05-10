@@ -1,4 +1,5 @@
-<h2>Happy Dental - Dental Booking App</h2>
+ 
+<h2>Portfolio Project 4 - Happy Dental - Dental Booking App</h2>
 
 - [**UX (User Experience)**](#ux-user-experience)
   - [**User Stories**](#user-stories)
@@ -22,7 +23,7 @@
 
 
 
-# Portfolio Project 4 - Happy Dental reservation system  
+
 ![](static/assets/img/amiresponsive-light.png)
 
 The deployed [HAPPYDENTAL]() app.
@@ -225,3 +226,37 @@ The project has been tested using a multi-device emulator with different screen 
 - booking confirmation by email & text if requested
 
 [Back to the top](#table-of-contents)
+
+## Technologies Used
+
+### Languages
+  - Python
+  - HTML5
+  - CSS3
+
+### Frameworks, Libraries, Programs
+
+  - [Django](https://www.djangoproject.com/): python framework used to create all the backend 
+
+### Database:
+  - [PostgreSQL](https://www.elephantsql.com/): the database used to store all the static data such as image files.
+  
+### Programs & Tools
+
+- [Google Fonts:](https://fonts.google.com/) -  incorporate font styles.  
+- [Font Awesome](https://fontawesome.com/): - create the icons used on the website.
+- [Bootstrap](https://getbootstrap.com/) - create the front-end design.
+- [Gitpod:](https://Gitpod.io/) - IDE to commit and push the project to GitHub.
+- [GitHub:](https://github.com/) - version control system to manage the code
+- [TinyPNG:]() Was used to reduce the size and weight of images and optimizing interaction with the site 
+- [Am I Responsive](http://ami.responsivedesign.is/) - generate an image showcasing the website's responsiveness to different screen sizes 
+- [Pip3](https://pypi.org/project/pip/) - package manager to install Python modules and libraries.
+- [Gunicorn](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/): "Green Unicorn" is a Python Web Server Gateway to translate HTTP Requests for Python to understand.
+- [Spycopg2](https://pypi.org/project/psycopg2/): PostgreSQL database adapter so I can manage the Database in Python. 
+- [Cloudinary](https://cloudinary.com/): the image hosting service used to upload images and other media.
+- [Heroku](https://dashboard.heroku.com/): the hosting service used to host the website.
+- [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/open/): - debug the website.
+- [W3C Validator](https://validator.w3.org/): was used to validate HTML5 code for the website.
+- [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS code for the website.
+- [Github Projects and Kanban board](https://github.com/users/dsouths/projects/3/views/1) - track the progress of the project in general and of every application in the project.
+- [Free grammar checker](https://www.zoho.com/writer/free-grammar-checker.html)
