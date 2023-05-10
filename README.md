@@ -80,7 +80,7 @@ The main page layout can be seen below:
 <details>
 <summary>Happy Dental website design template </summary>
 
-![Home page] ![homepage](https://github.com/dsouths/happydentalapp/assets/105642587/9c671901-20f1-4833-84fb-ffde7c543783)
+![Home page](https://github.com/dsouths/happydentalapp/assets/105642587/9c671901-20f1-4833-84fb-ffde7c543783)
 
 </details>
 <br />
