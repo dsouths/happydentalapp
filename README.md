@@ -24,7 +24,8 @@
 
 
 
-![](static/assets/img/amiresponsive-light.png)
+![happydental - amiresponsive](https://github.com/dsouths/happydentalapp/assets/105642587/18ad7c68-b626-4123-a8cb-814721b38589)
+
 
 The deployed [HAPPYDENTAL](https://happydental.herokuapp.com/) app.
 
