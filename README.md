@@ -427,4 +427,28 @@ Also you can select 'Automatic Deploys' so that the site updates when updates ar
 
 5. After successful deployment message in the page top right corner click the button labeled 'Open app' and you can access live app.
 
+## Credits
+
+### Code
+
+I used the GoBarber app by LarisaLG as a basis & inspiration for my code, which was based on Gobarber template from the Figma Community site. I used this code as a basis and added a custom model to select preferred dentist. I used the design as inspiration & modified it more to my taste & a more suitable styling for a dental booking app.
+
+The structure and the code of the project were based on two walkthroughs by the Code Institute, which I found invaluable:
+
+  * Hello Django - I created CRUD functionalities using this walkthrough.
+  * From I think  therefore I blog -  I utilized confirmation messages code and also followed the site deployment steps as a reminder. 
+
+Date picker field and minimum date validator taken from [here](https://gist.github.com/stasyao/99376eb0cf0ad3599f9737c421b5210e#part_4).
+
+I used Stack Overflow, Slack & Google for research into code functionalities and problem solving. 
+
+
+### Content
+
+The site home page is based on the GoBarber app by LarisaLG who borrowed from the Figma community template. I changed the look of the home page & color palette used and tried to keep the rest of the pages in the same style.
+
+This project was inspired by the GoBarber app by LarisaLG, the Hello Django project and the I Think Therefore I Blog project.
+Website template from Gobarber app by LarisaLG & Figma community.
+As a source of inspiration for this project I used the real website [Truly Dental](https://trulydental.ie/). 
+LarisaLG & Aleksey Konovalov's Readme.md file was used as a template for writing Readme.md
 
