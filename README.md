@@ -358,6 +358,7 @@ Initial errors when using W3 Validator to validate Django code
 <details><summary>Change booking page</summary>
 
 ![](https://github.com/dsouths/happydentalapp/assets/105642587/5863633a-a58f-48dc-9ea0-d5fc93c3055d)
+</details> 
 
 <details><summary>Delete booking page</summary>
 
@@ -391,10 +392,10 @@ models.py
 ![models.py](https://github.com/dsouths/happydentalapp/assets/105642587/c627501a-650e-49e8-a40f-3b3f94e807bd)
 
 forms.py
-![forms.py]!(https://github.com/dsouths/happydentalapp/assets/105642587/4276f51d-c923-42e9-a0a6-e764c070d015)
+![forms.py](https://github.com/dsouths/happydentalapp/assets/105642587/4276f51d-c923-42e9-a0a6-e764c070d015)
 
 views.py
-![views.py]!(https://github.com/dsouths/happydentalapp/assets/105642587/5aa490a7-a7f7-4c88-8eb2-cbca77beb5ca)
+![views.py](https://github.com/dsouths/happydentalapp/assets/105642587/5aa490a7-a7f7-4c88-8eb2-cbca77beb5ca)
 
 
 ---
