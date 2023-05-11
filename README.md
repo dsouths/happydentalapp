@@ -232,6 +232,7 @@ The project has been tested using a multi-device emulator with different screen 
 
 ### Languages
   - Python
+  - Javascript
   - HTML5
   - CSS3
 
@@ -380,3 +381,21 @@ The website CSS style has successfully passed the [W3C Jigsaw CSS Validation Ser
 <br/>
  
  ### Python Validation (PEP8)
+
+All Python code was manually checked using CI Python Linter. The main issue I found was exceeding the string length of 79 characters, which have been fixed. Re-testing did not reveal any errors.
+ 
+urls.py
+![urls.py](https://github.com/dsouths/happydentalapp/assets/105642587/9aa0693a-c5dd-4f01-949b-c23472fc941d)
+
+models.py
+![models.py](https://github.com/dsouths/happydentalapp/assets/105642587/c627501a-650e-49e8-a40f-3b3f94e807bd)
+
+forms.py
+![forms.py]!(https://github.com/dsouths/happydentalapp/assets/105642587/4276f51d-c923-42e9-a0a6-e764c070d015)
+
+views.py
+![views.py]!(https://github.com/dsouths/happydentalapp/assets/105642587/5aa490a7-a7f7-4c88-8eb2-cbca77beb5ca)
+
+
+---
+
