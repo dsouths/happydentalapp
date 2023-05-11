@@ -1,11 +1,9 @@
-
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import *
+from .models import Booking, Service, Dentist, Appointment
 from .forms import BookingForm
 import datetime
 from django.contrib import messages
 from django.http import HttpResponse
-from .models import Appointment, Dentist
 
 
 # Create your views here.
@@ -32,13 +30,19 @@ def booknow(request):
             booking_form = form.save(commit=False)
             booking_form.user = request.user
 
-            # Check if the dentist is already booked for the selected date and time
+            # Check if the dentist is already
+            # booked for the selected date and time
             existing_booking = Booking.objects.filter(
-                dentist=booking_form.dentist, date=booking_form.date, time=booking_form.time
+                dentist=booking_form.dentist,
+                date=booking_form.date, time=booking_form.time
             ).first()
             if existing_booking:
                 # If there is an existing booking, show an error message
-                messages.error(request, "The selected time slot is not available. Please choose another time.")
+                messages.error(
+                    request,
+                    "The selected time slot is not available. "
+                    "Please choose another time."
+                    )
             else:
                 # If there is no existing booking, proceed with the booking
                 booking_form.save()
@@ -98,9 +102,11 @@ def delete_booking(request, booking_id):
 
     form = BookingForm(instance=record)
     context = {
-        'form': form, 'record': record}
+        'form': form,
+        'record': record
+    }
     return render(request, 'delete-booking.html', context)
-     
+
 
 def book_appointment(request):
     if request.method == 'POST':
@@ -111,11 +117,14 @@ def book_appointment(request):
         dentist = Dentist.objects.get(id=dentist_id)
 
         # Check if the dentist is already booked for the selected date and time
-        existing_appointment = Appointment.objects.filter(dentist=dentist, date=date, time=time).first()
+        existing_appointment = Appointment.objects.filter(
+            dentist=dentist, date=date, time=time).first()
         if existing_appointment:
             # If there is an existing appointment, show an error message
             return render(request, 'book_appointment.html', {
-                'error_message': 'The selected time slot is not available. Please choose another time.',
+                'error_message':
+                    'The selected time slot is not available.'
+                    'Please choose another time.',
             })
         else:
             # If there is no existing appointment, proceed with the booking

@@ -1,11 +1,11 @@
 from django.db import models
-from enum import unique
 from django.contrib.auth.models import User
 from django.core.validators import RegexValidator
 
 
 class Service(models.Model):
-    """The model is used to display data about the services
+    """
+    The model is used to display data about the services
     provided by the dental practice
     """
     service_name = models.CharField(max_length=150, unique=True)
@@ -43,6 +43,7 @@ class Dentist(models.Model):
     def __str__(self):
         return self.name
 
+
 class Appointment(models.Model):
     dentist = models.ForeignKey(Dentist, on_delete=models.CASCADE)
     date = models.DateField()
@@ -53,32 +54,38 @@ class Appointment(models.Model):
 
 
 def get_default_dentist():
-    default_dentist, created = Dentist.objects.get_or_create(name="Dr Goodteeth")
+    default_dentist, created = Dentist.objects.get_or_create(
+        name="Dr Goodteeth"
+    )
     return default_dentist.id
 
 
 class Booking(models.Model):
-
-    """Model that is used to store the data that the user enters in the
+    """
+    Model that is used to store the data that the user enters in the
     booking form
     """
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     service = models.ForeignKey(Service, null=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=50)
     email = models.EmailField(blank=True, null=True)
-    phoneRegex = RegexValidator(regex=r'^\+?1?\d{8,15}$',
-                                message="Please enter a valid phone number,"
-                                "e.g. 123456789. Up to 15 digits allowed.",
-                                code="invalid")
-    phone = models.CharField(validators=[phoneRegex], max_length=16,
-                             null=True, blank=True)
-    dentist = models.ForeignKey(Dentist, on_delete=models.CASCADE, default=get_default_dentist)
+    phoneRegex = RegexValidator(
+        regex=r'^\+?1?\d{8,15}$',
+        message="Please enter a valid phone number,"
+                "e.g. 123456789. Up to 15 digits allowed.",
+        code="invalid"
+    )
+    phone = models.CharField(
+        validators=[phoneRegex], max_length=16, null=True, blank=True
+    )
+    dentist = models.ForeignKey(
+        Dentist, on_delete=models.CASCADE, default=get_default_dentist
+    )
     date = models.DateField()
     time = models.CharField(max_length=30, choices=HOURS, default='10:00')
 
     class Meta:
-        unique_together = ('user','dentist', 'date', 'time', 'service')
+        unique_together = ('user', 'dentist', 'date', 'time', 'service')
 
     def __str__(self):
         return self.name
-
