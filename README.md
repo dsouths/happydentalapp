@@ -325,8 +325,6 @@ Initial errors when using W3 Validator to validate Django code
 
 </details>
 
-
-
 <details><summary>Home page</summary>
 
 ![](https://github.com/dsouths/happydentalapp/assets/105642587/59231143-1efd-4628-b8e5-d00d48aea2b7)
@@ -383,7 +381,7 @@ The website CSS style has successfully passed the [W3C Jigsaw CSS Validation Ser
  
  ### Python Validation (PEP8)
 
-All Python code was manually checked using CI Python Linter. The main issue I found was exceeding the string length of 79 characters, which have been fixed. Re-testing did not reveal any errors.
+All Python code was manually checked using CI Python Linter. The main issue I found was exceeding the string length of 79 characters, & whitespace, which have been fixed. Re-testing did not reveal any errors.
  
 urls.py
 ![urls.py](https://github.com/dsouths/happydentalapp/assets/105642587/9aa0693a-c5dd-4f01-949b-c23472fc941d)
@@ -431,7 +429,9 @@ Also you can select 'Automatic Deploys' so that the site updates when updates ar
 
 ### Code
 
-I used the GoBarber app by LarisaLG as a basis & inspiration for my code, which was based on Gobarber template from the Figma Community site. I used this code as a basis and added a custom model to select preferred dentist. I used the design as inspiration & modified it more to my taste & a more suitable styling for a dental booking app.
+I used the GoBarber app by LarisaLG as a basis & inspiration for my code, which was based on Gobarber template from the Figma Community site. I built on this code and added a custom model to select preferred dentist from a choice of three, have a default dentist, Dr Goodteeth, & added some other functionality like not allowing a double booking by two users & not allowing bookings for saturdays or sundays when the dental practice would be closed. 
+
+I used the design as inspiration & modified it more to my taste & a more suitable styling for a dental booking app.
 
 The structure and the code of the project were based on two walkthroughs by the Code Institute, which I found invaluable:
 
@@ -447,8 +447,8 @@ I used Stack Overflow, Slack & Google for research into code functionalities and
 
 The site home page is based on the GoBarber app by LarisaLG who borrowed from the Figma community template. I changed the look of the home page & color palette used and tried to keep the rest of the pages in the same style.
 
-This project was inspired by the GoBarber app by LarisaLG, the Hello Django project and the I Think Therefore I Blog project.
-Website template from Gobarber app by LarisaLG & Figma community.
-As a source of inspiration for this project I used the real website [Truly Dental](https://trulydental.ie/). 
-LarisaLG & Aleksey Konovalov's Readme.md file was used as a template for writing Readme.md
+- This project was inspired by the GoBarber app by LarisaLG, the Hello Django project and the I Think Therefore I Blog project.
+- Website template from Gobarber app by LarisaLG & Figma community.
+- As a source of inspiration for this project I used the real website [Truly Dental](https://trulydental.ie/). 
+- LarisaLG & Aleksey Konovalov's Readme.md file was used as a template for writing Readme.md
 
