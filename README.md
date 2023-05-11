@@ -262,7 +262,7 @@ The project has been tested using a multi-device emulator with different screen 
 - [Github Projects and Kanban board](https://github.com/users/dsouths/projects/3/views/1) - track the progress of the project in general and of every application in the project.
 - [Free grammar checker](https://www.zoho.com/writer/free-grammar-checker.html)
 
-## Testing
+
 ### Manual Testing
 
 #### Device Testing
