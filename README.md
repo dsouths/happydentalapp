@@ -368,6 +368,7 @@ Initial errors when using W3 Validator to validate Django code
 ![](https://github.com/dsouths/happydentalapp/assets/105642587/f8baf4f6-a1c2-41f1-a3c3-ebde8607a124)
 
 </details>
+<<<<<<< HEAD
  
 ### CSS Validation:
 
@@ -454,3 +455,5 @@ The site home page is based on the GoBarber app by LarisaLG who borrowed from th
 - LarisaLG & Aleksey Konovalov's Readme.md file was used as a template for writing Readme.md
 
 >>>>>>> refs/remotes/origin/main
+=======
+>>>>>>> parent of ad876ea (Update README.md)
