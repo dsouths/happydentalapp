@@ -324,8 +324,6 @@ Initial errors when using W3 Validator to validate Django code
 
 </details>
 
-
-
 <details><summary>Home page</summary>
 
 ![](https://github.com/dsouths/happydentalapp/assets/105642587/59231143-1efd-4628-b8e5-d00d48aea2b7)
@@ -357,6 +355,7 @@ Initial errors when using W3 Validator to validate Django code
 <details><summary>Change booking page</summary>
 
 ![](https://github.com/dsouths/happydentalapp/assets/105642587/5863633a-a58f-48dc-9ea0-d5fc93c3055d)
+</details> 
 
 <details><summary>Delete booking page</summary>
 
@@ -380,3 +379,78 @@ The website CSS style has successfully passed the [W3C Jigsaw CSS Validation Ser
 <br/>
  
  ### Python Validation (PEP8)
+<<<<<<< HEAD
+=======
+
+All Python code was manually checked using CI Python Linter. The main issue I found was exceeding the string length of 79 characters, & whitespace, which have been fixed. Re-testing did not reveal any errors.
+ 
+urls.py
+![urls.py](https://github.com/dsouths/happydentalapp/assets/105642587/9aa0693a-c5dd-4f01-949b-c23472fc941d)
+
+models.py
+![models.py](https://github.com/dsouths/happydentalapp/assets/105642587/c627501a-650e-49e8-a40f-3b3f94e807bd)
+
+forms.py
+![forms.py](https://github.com/dsouths/happydentalapp/assets/105642587/4276f51d-c923-42e9-a0a6-e764c070d015)
+
+views.py
+![views.py](https://github.com/dsouths/happydentalapp/assets/105642587/5aa490a7-a7f7-4c88-8eb2-cbca77beb5ca)
+
+
+---
+</br>
+
+##  Deployment
+
+The project was developed using Gitpod, the project code is stored on GitHub, and then deployed to Heroku.
+To deploy, follow these steps:
+
+1. Log in to Heroku or create an account if required.
+On the Welcome page in the top right corner click the button labeled 'New'.
+
+2. From the drop-down menu select 'Create new app'.
+Enter a preferred app name.
+Select the relevant geographical region.
+Click to 'Create App'.
+
+3. Navigate to 'Settings' and scroll down to the 'Config Vars' section.
+Click 'Reveal Config Vars' and enter 'PORT' for the key and '8000' for the value. Then click 'Add'.
+Add CLOUDINARY_URL, DATABASE_URL and SECRET_KEY. URL variable values must be copied from your [CLOUDINARY](https://cloudinary.com/) account  and [ElephantSQL](https://www.elephantsql.com/) account.
+To create a SECRET KEY, use the online service or come up with your own.
+
+4. Click on the 'Deploy' tab.
+Next to 'Deployment method' select 'GitHub'.
+Connect the relevant GitHub repository.
+Under 'Manual deploy' choose the correct branch and click 'Deploy Branch'.
+Also you can select 'Automatic Deploys' so that the site updates when updates are pushed to GitHub.
+
+5. After successful deployment message in the page top right corner click the button labeled 'Open app' and you can access live app.
+
+## Credits
+
+### Code
+
+I used the GoBarber app by LarisaLG as a basis & inspiration for my code, which was based on Gobarber template from the Figma Community site. I built on this code and added a custom model to select preferred dentist from a choice of three, have a default dentist, Dr Goodteeth, & added some other functionality like not allowing a double booking by two users & not allowing bookings for saturdays or sundays when the dental practice would be closed. 
+
+I used the design as inspiration & modified it more to my taste & a more suitable styling for a dental booking app.
+
+The structure and the code of the project were based on two walkthroughs by the Code Institute, which I found invaluable:
+
+  * Hello Django - I created CRUD functionalities using this walkthrough.
+  * From I think  therefore I blog -  I utilized confirmation messages code and also followed the site deployment steps as a reminder. 
+
+Date picker field and minimum date validator taken from [here](https://gist.github.com/stasyao/99376eb0cf0ad3599f9737c421b5210e#part_4).
+
+I used Stack Overflow, Slack & Google for research into code functionalities and problem solving. 
+
+
+### Content
+
+The site home page is based on the GoBarber app by LarisaLG who borrowed from the Figma community template. I changed the look of the home page & color palette used and tried to keep the rest of the pages in the same style.
+
+- This project was inspired by the GoBarber app by LarisaLG, the Hello Django project and the I Think Therefore I Blog project.
+- Website template from Gobarber app by LarisaLG & Figma community.
+- As a source of inspiration for this project I used the real website [Truly Dental](https://trulydental.ie/). 
+- LarisaLG & Aleksey Konovalov's Readme.md file was used as a template for writing Readme.md
+
+>>>>>>> refs/remotes/origin/main
