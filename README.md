@@ -119,12 +119,75 @@ If the user changes their mind, they can return to the page by clicking on the B
 
 ### Wireframes
 
+I used canva to sketch out some wireframes for the design of the website. I believe wireframes are a great tool for:
+- **Planning and Organization -** great way to determine key elements required
+- **Conceptualization and Communication -** good as a starting point to discuss design with other developers on the project
+- **Focus on Functionality -** focuses on core functionality allowing me to concentrate on usability & interaction of the user with the website
+- **Feedback -** good to gather feedback & make any changes at initial design stage
 
 **For Mobile view and small screens**
+
+<details>
+<summary>Home page</summary>
+
+![WIREFRAMES  mobile - homepage](https://github.com/dsouths/happydentalapp/assets/105642587/e3c6514f-d39c-4904-8273-ea69283eb1ce)
+</details>
+
+<details>
+<summary>Sign up page</summary>
+
+![WIREFRAMES  mobile - signup](https://github.com/dsouths/happydentalapp/assets/105642587/bbd1f143-5ff6-4062-a559-9c964b901179)
+</details>
+
+<details>
+<summary>Login page</summary>
+ 
+![WIREFRAMES  mobile - login](https://github.com/dsouths/happydentalapp/assets/105642587/2bbd5c64-c473-4d9a-9a8f-160a07a1dec5)
+</details>
+
+
+<details>
+<summary>Services page</summary>
+
+![WIREFRAMES  mobile - treatments](https://github.com/dsouths/happydentalapp/assets/105642587/bae7556a-4323-4ae7-ac70-24a3a9289bef)
+</details>
+
 
 <br />
 
 **For Desktop view**
+
+<details>
+<summary>Home page</summary>
+
+
+![WIREFRAMES - homepage](https://github.com/dsouths/happydentalapp/assets/105642587/74358784-2d3e-454c-ae19-a03e15f33c11)
+
+
+</details>
+
+<details>
+<summary>Sign up page</summary>
+
+![WIREFRAMES - signup](https://github.com/dsouths/happydentalapp/assets/105642587/99145fe6-e05d-4b44-8532-2751d05f337a)
+</details>
+
+<details>
+<summary>Login page</summary>
+
+![WIREFRAMES - signin](https://github.com/dsouths/happydentalapp/assets/105642587/525c952d-c32d-49b1-8bd8-9b842d3f4f5d)
+</details>
+
+
+<details>
+<summary>Services page</summary>
+
+ 
+![WIREFRAMES - services](https://github.com/dsouths/happydentalapp/assets/105642587/0e0740e4-9c2c-42c1-a5c0-eaec840ee977)
+</details>
+
+
+<br />
 
 ## Features
 
