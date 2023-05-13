@@ -358,6 +358,35 @@ This error also occured when debug was set to False initially. This was also due
 #### Unresolved Bugs
 No known bugs remaining
 
+## PERFORMANCE AND ACCESSIBILITY
+
+## Lighthouse Reports
+
+All pages accessible from the Navbar to authenticated users were tested for Performance, Accessibility, Best Practices and SEO using Lighthouse in Chrome Developer Tools.
+
+Home Page:
+
+![LIGHTHOUSE - homepage desktop](https://github.com/dsouths/happydentalapp/assets/105642587/ca608525-98fb-4243-b40f-5f7a8103187b)
+
+
+Services Page:
+
+![LIGHTHOUSE - services desktop](https://github.com/dsouths/happydentalapp/assets/105642587/86654a81-affb-45a8-bcd6-ded21f99304d)
+
+Signup Page:
+
+![LIGHTHOUSE - signup desktop](https://github.com/dsouths/happydentalapp/assets/105642587/e83ec5b5-11fb-4260-b57f-cc272386049a)
+
+Book now Page:
+
+I have shown an example of how manual testing via lighthouse is an invaluable tool to optimize website performance. 
+
+You can see perfomance of this page is 77 before optimizing the image using [TinyPNG](www.tinypng.com) & improving this to 89. Further improvements regarding performance & SEO could be made if I were to take the prject further.
+
+![LIGHTHOUSE - booknow desktop 1](https://github.com/dsouths/happydentalapp/assets/105642587/db652709-f178-493b-b9f6-c91b7bea0afc)
+
+
+![Screenshot 2023-05-13 171028](https://github.com/dsouths/happydentalapp/assets/105642587/bd2a7040-d269-4d46-a681-0bd0115fd672)
 
 ### Manual Testing
 
