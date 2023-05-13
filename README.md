@@ -18,7 +18,6 @@
   - [**Code**](#code)
   - [**Content**](#content)
   - [**Media**](#media)
-  - [**Inspiration**](#inspiration)
   - [**Acknowledgments**](#acknowledgments)
 
 
@@ -262,6 +261,39 @@ The project has been tested using a multi-device emulator with different screen 
 - [Github Projects and Kanban board](https://github.com/users/dsouths/projects/3/views/1) - track the progress of the project in general and of every application in the project.
 - [Free grammar checker](https://www.zoho.com/writer/free-grammar-checker.html)
 
+## Testing
+
+### Bugs
+
+During this project I came across many bugs that took a lot of patience to fix. I have included some bugs & a small description of them & how I corrected them:
+
+Initially I was deciding on a background image for my landing page & whether or not to use a logo in the center of the page.  The image was repeating & it did not look visually appealing to the user like this. I corrected this by including the following css code:
+- background-repeat: no-repeat;
+- background-position: center center;
+- background-size: cover;
+
+The positioning of the logo in relation to the login/create account was off & the login/create account button was lost in the background image. I decided to not use a logo here & created a box with background colour to enclose the login/create account to make it stand out to the user & improve the UX. 
+
+![image](https://github.com/dsouths/happydentalapp/assets/105642587/db345436-cb55-41cc-8cdf-324108216a12)
+
+
+![image](https://github.com/dsouths/happydentalapp/assets/105642587/77b6b05e-92d0-4da8-896f-3fa6246c0304)
+
+When deploying to Heroku I had an issue with CSS not loading. This was due to having my cloudinary credentials incorrectly input. I also had to remove the DISABLE_COLLECTSTATIC variable from the Config Vars on Heroku which fixed the issue
+
+
+![image](https://github.com/dsouths/happydentalapp/assets/105642587/acf4f1ca-ab78-4d6d-be54-d6fd7237f7bf)
+
+
+This error also occured when debug was set to False initially. This was also due to Cloudinary credentials & the naming of the hosting of the CSS file in cloudinary
+
+
+![image](https://github.com/dsouths/happydentalapp/assets/105642587/e7f394b5-b4fa-43a9-8992-833728658084)
+
+
+#### Unresolved Bugs
+No known bugs remaining
+
 
 ### Manual Testing
 
@@ -433,7 +465,7 @@ Also you can select 'Automatic Deploys' so that the site updates when updates ar
 
 I used the GoBarber app by LarisaLG as a basis & inspiration for my code, which was based on Gobarber template from the Figma Community site. I built on this code and added a custom model to select preferred dentist from a choice of three, have a default dentist, Dr Goodteeth, & added some other functionality like not allowing a double booking by two users & not allowing bookings for saturdays or sundays when the dental practice would be closed. 
 
-I used the design as inspiration & modified it more to my taste & a more suitable styling for a dental booking app.
+I used the design of the GoBarber app as inspiration & modified it more to my taste & a more suitable styling for a dental booking app.
 
 The structure and the code of the project were based on two walkthroughs by the Code Institute, which I found invaluable:
 
@@ -451,9 +483,17 @@ The site home page is based on the GoBarber app by LarisaLG who borrowed from th
 
 - This project was inspired by the GoBarber app by LarisaLG, the Hello Django project and the I Think Therefore I Blog project.
 - Website template from Gobarber app by LarisaLG & Figma community.
-- As a source of inspiration for this project I used the real website [Truly Dental](https://trulydental.ie/). 
+- As a source of inspiration for this project I used the real dental practice website [Truly Dental](https://trulydental.ie/). 
 - LarisaLG & Aleksey Konovalov's Readme.md file was used as a template for writing Readme.md
 
->>>>>>> refs/remotes/origin/main
-=======
->>>>>>> parent of ad876ea (Update README.md)
+### Media
+
+The images were all open source and free to use from Pexels & particular thanks to Anna Shvets, Antoni Shkraba, CottonBro Studios, Karolina Grabowska & Rohan Dalal.
+
+### Acknowledgments
+
+- The tutor support team at CI but it particular Holly who was a major help in fixing bugs relating to cloudinary & CSS issues - extremely patient & helpful, thank-you!
+- My mentor Martina who is always there to help & answer my questions
+- LarisaLG who created a great GoBarber app & inspired me to create the happydental booking app
+
+[Back to the top](#table-of-contents)
