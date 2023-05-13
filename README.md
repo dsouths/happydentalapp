@@ -312,7 +312,8 @@ The project has been tested using a multi-device emulator with different screen 
 - [Gitpod:](https://Gitpod.io/) - IDE to commit and push the project to GitHub.
 - [GitHub:](https://github.com/) - version control system to manage the code
 - [TinyPNG:]() Was used to reduce the size and weight of images and optimizing interaction with the site 
-- [Am I Responsive](http://ami.responsivedesign.is/) - generate an image showcasing the website's responsiveness to different screen sizes 
+- [Am I Responsive](http://ami.responsivedesign.is/) - generate an image showcasing the website's responsiveness to different screen sizes
+- [Canva](https://canva.com) - create wireframes 
 - [Pip3](https://pypi.org/project/pip/) - package manager to install Python modules and libraries.
 - [Gunicorn](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/): "Green Unicorn" is a Python Web Server Gateway to translate HTTP Requests for Python to understand.
 - [Spycopg2](https://pypi.org/project/psycopg2/): PostgreSQL database adapter so I can manage the Database in Python. 
