@@ -475,9 +475,7 @@ The website CSS style has successfully passed the [W3C Jigsaw CSS Validation Ser
 ---
 <br/>
  
- ### Python Validation (PEP8)
-<<<<<<< HEAD
-=======
+### Python Validation (PEP8)
 
 All Python code was manually checked using CI Python Linter. The main issue I found was exceeding the string length of 79 characters, & whitespace, which have been fixed. Re-testing did not reveal any errors.
  
@@ -559,5 +557,11 @@ The images were all open source and free to use from Pexels & particular thanks 
 - The tutor support team at CI but it particular Holly who was a major help in fixing bugs relating to cloudinary & CSS issues - extremely patient & helpful, thank-you!
 - My mentor Martina who is always there to help & answer my questions
 - LarisaLG who created a great GoBarber app & inspired me to create the happydental booking app
+
+Overall I found this project very challenging & rewarding. I took on board feedback from my previous projects & tried to incorporate the feedback in this project, in particular ensuring my commit messages are succinct & include commit messages for readme file. 
+
+Thank you for your time!
+
+daves
 
 [Back to the top](#table-of-contents)
